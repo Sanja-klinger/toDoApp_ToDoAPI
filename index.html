@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="todoForm">
+
+
+
+        <label for="inputField">New Todo:</label>
+        <input type="text" id="inputField">
+
+        <button id="btn" type="submit">Add Todo</button>
+
+
+        <button id="doneBtn" type="button">Remove done todos</button>
+        <br>
+
+        <div>
+            <input type="radio" id="all" name="tasks" value="All" />
+            <label for="all">Show all</label>
+        </div>
+
+        <div>
+            <input type="radio" id="done" name="tasks" value="Done" />
+            <label for="done">Show only done</label>
+        </div>
+
+        <div>
+            <input type="radio" id="open" name="tasks" value="Open" />
+            <label for="open">Show only open</label>
+        </div>
+
+    </form>
+
+    <ul id="todoList"></ul>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
